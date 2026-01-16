@@ -410,6 +410,13 @@ a {
   filter: drop-shadow(0 8px 18px rgba(14, 21, 38, 0.2));
 }
 
+.footer-note {
+  width: min(92%, var(--max-width));
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
