@@ -450,6 +450,45 @@ a {
   font-weight: 600;
 }
 
+.contact-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-family: inherit;
+  font-size: 0.98rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;

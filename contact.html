@@ -52,12 +52,32 @@
           <p>Pošlite nám krátky popis projektu a ozveme sa do 24 hodín.</p>
         </div>
         <div class="highlight reveal">
-          <h3>Bezplatná konzultácia</h3>
+          <h3>Objednať konzultáciu</h3>
           <p>
-            Pozrieme sa na váš profil, navrhneme obsahové série a odporučíme balík,
-            ktorý dáva zmysel vašim cieľom.
+            Vyplňte krátky formulár a po odoslaní sa otvorí váš emailový klient s
+            pripravenou správou.
           </p>
-          <a class="btn btn-ghost" href="mailto:realiboost.marketing@gmail.com">Napísať email</a>
+          <form
+            class="contact-form"
+            action="mailto:realiboost.marketing@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label class="form-field">
+              Meno a priezvisko
+              <input type="text" name="name" placeholder="Vaše meno" required />
+            </label>
+            <label class="form-field">
+              Email
+              <input type="email" name="email" placeholder="vas@email.sk" required />
+            </label>
+            <label class="form-field">
+              Správa
+              <textarea name="message" rows="4" placeholder="Krátky popis projektu" required></textarea>
+            </label>
+            <button class="btn btn-ghost" type="submit">Odoslať cez email</button>
+            <p class="form-note">Formulár používa váš emailový klient.</p>
+          </form>
         </div>
       </div>
     </section>
